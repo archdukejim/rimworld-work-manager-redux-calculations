@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Manager stations are already Building_WorkTable, so they have a bill stack; they just
+         never showed it, because Colony Manager Redux didn't use bills. -->
+    <Operation Class="PatchOperationAdd" MayRequire="ilyvion.colonymanagerredux">
+        <xpath>/Defs/ThingDef[defName="CM_ManagerStation" or defName="CM_BasicManagerStation" or defName="CMR_ManagingSpot"]</xpath>
+        <value>
+            <inspectorTabs>
+                <li>ITab_Bills</li>
+            </inspectorTabs>
+        </value>
+    </Operation>
+
+    <!-- Colony Manager Redux expressed desk quality as how much work a manager job costs (1000 at
+         a basic desk, 500 at a good one). Bills read speed off the bench instead, so the same
+         ratio is restored here as a work speed factor. -->
+    <Operation Class="PatchOperationAdd" MayRequire="ilyvion.colonymanagerredux">
+        <xpath>/Defs/ThingDef[defName="CM_ManagerStation"]/statBases</xpath>
+        <value>
+            <WorkTableWorkSpeedFactor>2.0</WorkTableWorkSpeedFactor>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="ilyvion.colonymanagerredux">
+        <xpath>/Defs/ThingDef[defName="CMR_ManagingSpot"]/statBases</xpath>
+        <value>
+            <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+        </value>
+    </Operation>
+</Patch>

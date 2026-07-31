@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- No ingredients and no products: the "product" is that the plan's designations land on the
+         map, which the bill applies itself when the work finishes. Speed comes from ManagingSpeed,
+         which Colony Manager Redux already scales off both Intellectual and Social. -->
+    <RecipeDef>
+        <defName>WMC_EnactManagementPlan</defName>
+        <label>enact management plan</label>
+        <description>Work through the colony's pending management plan and put it into effect.</description>
+        <jobString>Enacting management plan.</jobString>
+        <workAmount>1000</workAmount>
+        <workSpeedStat>ManagingSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <workSkillLearnFactor>1</workSkillLearnFactor>
+        <unfinishedThingDef>WMC_UnfinishedManagementPlan</unfinishedThingDef>
+        <effectWorking>Research</effectWorking>
+        <recipeUsers>
+            <li>CM_ManagerStation</li>
+            <li>CM_BasicManagerStation</li>
+            <li>CMR_ManagingSpot</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>

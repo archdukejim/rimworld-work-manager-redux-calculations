@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WMC.Bill.Label>enact management plan ({0})</WMC.Bill.Label>
+
+  <WMC.Book.Discard>Discard draft</WMC.Book.Discard>
+  <WMC.Book.Discard.Tip>Throw away the half-written plan. The decisions behind it stay on the desk as a bill, so a manager will start the write-up again rather than the colony having to work everything out from scratch.</WMC.Book.Discard.Tip>
+  <WMC.Book.AwaitingPlan>Waiting on the colony's next round of planning.</WMC.Book.AwaitingPlan>
+  <WMC.Book.Expires>Superseded in {0}.</WMC.Book.Expires>
+  <WMC.Book.Expired>Superseded; waiting to be cleared.</WMC.Book.Expired>
+
+  <WMC.Settings.AnchorHour>Plan at: {0}</WMC.Settings.AnchorHour>
+  <WMC.Settings.AnchorHour.Tip>Every planning schedule is anchored to this hour instead of running a fixed time after the last one. A job set to run every four hours runs at this hour and every four hours after it, the same times every day. A daily job runs once, at this hour. Early morning keeps the thinking out of the colony's working day.</WMC.Settings.AnchorHour.Tip>
+  <WMC.Settings.AnchorExample>A four-hourly job would be planned at: {0}</WMC.Settings.AnchorExample>
+
+  <WMC.Settings.ReplaceDeskPlanning>Replace at-the-desk planning</WMC.Settings.ReplaceDeskPlanning>
+  <WMC.Settings.ReplaceDeskPlanning.Tip>Stop Colony Manager Redux from sending colonists to the desk to work jobs out from scratch. With this off, both systems run and colonists will do the same thinking twice.</WMC.Settings.ReplaceDeskPlanning.Tip>
+  <WMC.Settings.RequirePower>Require a powered station</WMC.Settings.RequirePower>
+  <WMC.Settings.RequirePower.Tip>Only plan in the background when there's a manager station that isn't burning and has power. Turn this off to let the colony keep planning through a blackout.</WMC.Settings.RequirePower.Tip>
+
+  <WMC.Settings.Speed>Background planning speed: {0}x</WMC.Settings.Speed>
+  <WMC.Settings.Speed.Tip>How much faster planning runs when nobody is waiting on it. Colony Manager Redux normally spreads its work thinly across many ticks to stay out of the way of the running game; background planning happens while the colony sleeps, so it can be done in a burst instead. Lower this if you see a stutter at the planning hour.</WMC.Settings.Speed.Tip>
+
+  <WMC.Settings.SocialShare>Social experience from managing: {0} of Intellectual</WMC.Settings.SocialShare>
+
+</LanguageData>

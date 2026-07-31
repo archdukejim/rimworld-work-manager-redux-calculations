@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- The plan sitting on the desk. UnfinishedBase gives it the behaviour asked for by
+         definition: isUnfinishedThing keeps pawns from hauling it, it holds the work done so far
+         across interruptions, and because the recipe has no ingredients there is nothing to
+         return when it's destroyed. -->
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>WMC_UnfinishedManagementPlan</defName>
+        <thingClass>ManagerBackgroundPlanning.ManagementPlanBook</thingClass>
+        <label>management plan</label>
+        <description>A half-written plan for the colony: pages of designations, quotas and orders waiting to be signed off. Until a manager finishes it, none of it means anything. It can't be carried anywhere useful, and it's worth nothing to anyone but the colony that ordered it.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/WMC_ManagementPlan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.8, 0.8)</drawSize>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <statBases>
+            <Mass>0.2</Mass>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Beauty>0</Beauty>
+        </statBases>
+        <stuffCategories Inherit="False" />
+        <costStuffCount>0</costStuffCount>
+        <tradeability>None</tradeability>
+        <destroyOnDrop>false</destroyOnDrop>
+    </ThingDef>
+</Defs>
